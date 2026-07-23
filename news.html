@@ -10,7 +10,86 @@
   <link rel="stylesheet" href="MagicU.css">
 </head>
 <body>
-
+<style>
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .article-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .thumbnail {
+      overflow: hidden;
+      padding: 0;
+      width: 100%;
+      height: 180px;
+      border-radius: 8px;
+      background: #1a1a1a;
+    }
+    .thumbnail img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .featured-article {
+      display: flex;
+      align-items: stretch;
+    }
+    .featured-image {
+      overflow: hidden;
+      padding: 0;
+      flex: 0 0 320px;
+      height: 220px;
+      border-radius: 8px;
+      background: #1a1a1a;
+    }
+    .featured-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    @media (max-width: 900px) {
+      .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+      .featured-article {
+        flex-direction: column;
+      }
+      .featured-image {
+        flex: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <!--NAVIGATION-->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">MAGIC U!</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="news.html" class="active">News</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+ 
   <!--NAVIGATION-->
   <header class="site-header">
     <div class="nav-wrap">
@@ -93,37 +172,49 @@
       <div class="article-grid">
 
         <div class="article-card" data-category="dev-blog">
-          <div class="thumbnail">Thumbnail</div>
+          <div class="thumbnail">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/55a976ff-7886-4ea3-85e6-4c54897e34be/debxozr-a87963cb-5bf4-4fdf-b07e-7745b5399781.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi81NWE5NzZmZi03ODg2LTRlYTMtODVlNi00YzU0ODk3ZTM0YmUvZGVieG96ci1hODc5NjNjYi01YmY0LTRmZGYtYjA3ZS03NzQ1YjUzOTk3ODEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jYixbFHe1t9VlxrGM0Wqr7j0VVS8TVkYxu3NK9YIWbE" alt="Behind the Scenes: Building the Courtyard">
+          </div>
           <span class="tag">Dev Blog &middot; July 15, 2026</span>
           <h4>Behind the Scenes: Building the Courtyard</h4>
         </div>
 
         <div class="article-card" data-category="announcements">
-          <div class="thumbnail">Thumbnail</div>
+          <div class="thumbnail">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95c36513-b099-481c-8c69-95184b1b961f/dbsitkc-18910623-2154-400f-b540-ffb6abda639b.jpg/v1/fill/w_900,h_637,q_75,strp/989_reflected_golden_fire_circle_by_tigers_stock_dbsitkc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjM3IiwicGF0aCI6Ii9mLzk1YzM2NTEzLWIwOTktNDgxYy04YzY5LTk1MTg0YjFiOTYxZi9kYnNpdGtjLTE4OTEwNjIzLTIxNTQtNDAwZi1iNTQwLWZmYjZhYmRhNjM5Yi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.NAw0mEH0G9qJXKHJaD6ghcG-3ASSQsRSPeP5wLpbWW4" alt="New Faction Reveal: The Ember Circle">
+          </div>
           <span class="tag">Announcement &middot; July 10, 2026</span>
           <h4>New Faction Reveal: The Ember Circle</h4>
         </div>
 
         <div class="article-card" data-category="events">
-          <div class="thumbnail">Thumbnail</div>
+          <div class="thumbnail">
+            <img src="https://www.belloflostsouls.net/wp-content/uploads/2025/11/alustriel-forgotten-relams-dnd-in-article.jpg" alt="Community Duel Tournament This Weekend">
+          </div>
           <span class="tag">Event &middot; July 5, 2026</span>
           <h4>Community Duel Tournament This Weekend</h4>
         </div>
 
         <div class="article-card" data-category="dev-blog">
-          <div class="thumbnail">Thumbnail</div>
+          <div class="thumbnail">
+            <img src="https://hard-drive.net/wp-content/uploads/sites/10/2023/01/spellcraft-tree.jpg" alt="How We Designed the Spellcrafting System">
+          </div>
           <span class="tag">Dev Blog &middot; June 28, 2026</span>
           <h4>How We Designed the Spellcrafting System</h4>
         </div>
 
         <div class="article-card" data-category="announcements">
-          <div class="thumbnail">Thumbnail</div>
+          <div class="thumbnail">
+            <img src="https://cdn-icons-png.flaticon.com/512/7058/7058581.png" alt="Server Maintenance Window Scheduled">
+          </div>
           <span class="tag">Announcement &middot; June 20, 2026</span>
           <h4>Server Maintenance Window Scheduled</h4>
         </div>
 
         <div class="article-card" data-category="events">
-          <div class="thumbnail">Thumbnail</div>
+          <div class="thumbnail">
+            <img src="https://images.seattletimes.com/wp-content/uploads/2025/04/urnpublicidap.orge1d7c9b15fb43141af3729db07bc2c6fCzech_Republic_Comic_Con_35575.jpg?d=780x520" alt="Founders' Feast: Sign Up Now">
+          </div>
           <span class="tag">Event &middot; June 12, 2026</span>
           <h4>Founders' Feast: Sign Up Now</h4>
         </div>
