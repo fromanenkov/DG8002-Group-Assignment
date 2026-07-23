@@ -29,8 +29,8 @@
     </div>
     Sign up below for regular email updates. <br>
     <form class="form">
-        <input class= email-home type="email" name="Email"> <br>
-        <input class="btn" type="submit" value="Submit">
+        <input class= email-home type="email" name="Email" id="email"> <br>
+        <input class="btn" type="submit" value="Submit" id="btn">
     </form>
     <iframe width="1000" height="615" src="https://www.youtube.com/embed/WbnqPMdNx88?si=UNsdFQ_UW43fvXgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <h2>ABOUT THE GAME</h2>
@@ -47,3 +47,27 @@ To all magical beginnings...
 </div>
 </main>
 </body>
+
+
+
+
+<script>
+    var btn = document.querySelector("#btn");
+    var email = document.querySelector("#email");
+
+
+    function onClick(event) {
+        event.preventDefault();
+        var emailValue = email.value;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailValue === "" || !emailPattern.test(emailValue)) {
+            alert("That's not a valid email silly. Please type in a valid email!");
+        } else {
+            alert("Your email has been added to the recipient list! Stay tuned for magical updates ^_^");
+            email.value = ""; 
+        }
+    }
+
+    btn.addEventListener("click", onClick);
+</script>
