@@ -27,8 +27,12 @@
     <div class="container-community">
             <a href="https://imgur.com/a/dIdM6A6"><img src="images/discord.png" alt="Discord" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/steam.png" alt="Steam" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/twitch.png" alt="Twitch" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/youtube.png" alt="Youtube" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/reddit.png" alt="Reddit" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/instagram.png" alt="Instagram" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/facebook.png" alt="Facebook" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/bluesky.png" alt="Bluesky" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/twitter.png" alt="Twitter" style="width:50px"></a> 
         </div>  
-    <h2 id="Center">Fan Creations</h2>
-    <input type="button" value="SUBMIT YOUR ART" id="submission" class="btn">
+    <div class="container-community">
+        <h2 id="Center">Fan Creations</h2> 
+    </div>
+    <div class="container-community">
+        <input class="btn" type="button" value="SUBMIT YOUR ART" id="submission">
+    </div>
     <div class="container-community">
             <a href="https://www.artstation.com/artwork/Ov0aay"><img src="images/witchhatatelier.webp" alt="Fanart1" style="height:300px"></a>   <a href="https://www.artstation.com/artwork/eaPge3"><img src="images/winx.jpg" alt="Fanart3" style="height:300px"></a> <a href="https://www.artstation.com/artwork/WKvOaN"><img src="images/ghibli.jpg" alt="Fanart7" style="height:300px"></a> <a href="https://www.artstation.com/artwork/3EOlXo"><img src="images/dina.jpg" alt="Fanart4" style="height:300px"></a>
         </div>
@@ -40,17 +44,17 @@
             <tr>
                 <th>13th September 2026</td>
                 <td>Jackbox Community Night! Join us in the audience for jackbox games and get to know our game devs a bit more! Expect raunchy laughs ;)</td>
-                <td><input type="button" value="RSVP" id="rsvp" class="btn">
+                <td><input type="button" value="RSVP" id="rsvp1" class="btn">
             </tr>
             <tr>
                 <th>30th October 2026</td>
                 <td>Halloween Horror Games! Join us for a series of different multiplayer horror games including but not limited to: REPO, Dead By Daylight, and many others!</td>
-                <td><input type="button" value="RSVP" id="rsvp" class="btn">
+                <td><input type="button" value="RSVP" id="rsvp2" class="btn">
             </tr>
             <tr>
                 <th>21st December 2026</td>
                 <td>Holiday Fanart Contest! Create holiday-themed art with other community members and win special prizes!</td>
-                <td><input type="button" value="RSVP" id="rsvp" class="btn">
+                <td><input type="button" value="RSVP" id="rsvp3" class="btn">
             </tr>
         </table>
 
@@ -65,9 +69,21 @@
     }
     submission.addEventListener("click", submitbutton);
 
-    var rsvp=document.querySelector("#rsvp");
-    function rsvpbutton(){
+    var rsvp=document.querySelector("#rsvp1");
+    function rsvpbutton1(){
         alert("Thank you for RSVPing! Please check your email :)")
     }
-    rsvp.addEventListener("click", rsvpbutton);
+    rsvp.addEventListener("click", rsvpbutton1);
+
+    var rsvp=document.querySelector("#rsvp2");
+    function rsvpbutton2(){
+        alert("Thank you for RSVPing! Please check your email :)")
+    }
+    rsvp.addEventListener("click", rsvpbutton2);
+
+    var rsvp=document.querySelector("#rsvp3");
+    function rsvpbutton3(){
+        alert("Thank you for RSVPing! Please check your email :)")
+    }
+    rsvp.addEventListener("click", rsvpbutton3);
 </script>
