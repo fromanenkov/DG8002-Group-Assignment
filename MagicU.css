@@ -113,7 +113,9 @@ table, td {
 }
 
 .page-heading h1 {
-    font-size: 38px;
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-size: 56px;
     margin-bottom: 12px;
     color: white;
 }
@@ -777,7 +779,7 @@ main {
     font-family: "Fleur De Leah", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(3.5rem, 10vw, 12rem);
+    font-size: clamp(3.5rem, 10vw, 10rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
