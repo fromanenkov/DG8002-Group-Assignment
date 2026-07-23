@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community: Magic U!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="community.css">
 </head>
 <body>
-    <h1>Community</h1>
+    <h1 id="Center">Community</h1>
     <div class="container">
-        <div>
             <a href="https://imgur.com/a/dIdM6A6"><img src="images/discord.png" alt="Discord" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/steam.png" alt="Steam" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/twitch.png" alt="Twitch" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/youtube.png" alt="Youtube" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/reddit.png" alt="Reddit" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/instagram.png" alt="Instagram" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/facebook.png" alt="Facebook" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/bluesky.png" alt="Bluesky" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/twitter.png" alt="Twitter" style="width:50px"></a> 
         </div>  
-    <h2>Fan Creations</h2>  <input type="button" value="SUBMIT YOUR ART" id="submission">
+    <h2 id="Center">Fan Creations</h2>
+    <h2 id="Center"><input type="button" value="SUBMIT YOUR ART" id="submission" class="btn"></h2>
     <div class="container">
-        <div>
             <a href="https://www.artstation.com/artwork/Ov0aay"><img src="images/witchhatatelier.webp" alt="Fanart1" style="height:300px"></a>   <a href="https://www.artstation.com/artwork/eaPge3"><img src="images/winx.jpg" alt="Fanart3" style="height:300px"></a> <a href="https://www.artstation.com/artwork/WKvOaN"><img src="images/ghibli.jpg" alt="Fanart7" style="height:300px"></a> <a href="https://www.artstation.com/artwork/3EOlXo"><img src="images/dina.jpg" alt="Fanart4" style="height:300px"></a>
         </div>
-        <div>
+        <div class="container">
              <a href="https://www.artstation.com/artwork/rrR4L"><img src="images/littlewitch.jpg" alt="Fanart6" style="height:300px"></a> <a href="https://www.artstation.com/artwork/QzLw93"><img src="images/sailormoon.jpg" alt="Fanart5" style="height:300px"></a> <a href="https://www.artstation.com/artwork/3q3P4E"><img src="images/rayalucaria.jpg" alt="Fanart2" style="height:300px"></a>
         </div>
-    <h2>Upcoming Events</h2>
-        <table style="margin: 5px auto; width:30%">
+    <h2 id="Center">Upcoming Events</h2>
+        <table style="margin: 5px auto; width:60%">
             <tr>
-                <td>13th September 2026</td>
+                <th>13th September 2026</td>
                 <td>Jackbox Community Night! Join us in the audience for jackbox games and get to know our game devs a bit more! Expect raunchy laughs ;)</td>
-                <td><input type="button" value="RSVP" id="rsvp">
+                <td><input type="button" value="RSVP" id="rsvp" class="btn">
             </tr>
             <tr>
-                <td>30th October 2026</td>
+                <th>30th October 2026</td>
                 <td>Halloween Horror Games! Join us for a series of different multiplayer horror games including but not limited to: REPO, Dead By Daylight, and many others!</td>
-                <td><input type="button" value="RSVP" id="rsvp">
+                <td><input type="button" value="RSVP" id="rsvp" class="btn">
             </tr>
             <tr>
-                <td>21st December 2026</td>
+                <th>21st December 2026</td>
                 <td>Holiday Fanart Contest! Create holiday-themed art with other community members and win special prizes!</td>
-                <td><input type="button" value="RSVP" id="rsvp">
+                <td><input type="button" value="RSVP" id="rsvp" class="btn">
             </tr>
         </table>
 </body>
@@ -45,9 +44,10 @@
         alert("Fanart submissions will be available soon! apologies >~<")
     }
     submission.addEventListener("click", submitbutton);
+
     var rsvp=document.querySelector("#rsvp");
-    function submitbutton(){
+    function rsvpbutton(){
         alert("Thank you for RSVPing! Please check your email :)")
     }
-    rsvp.addEventListener("click", submitbutton);
+    rsvp.addEventListener("click", rsvpbutton);
 </script>
