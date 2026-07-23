@@ -10,18 +10,17 @@
     <title>Homepage: Magic U!</title>
 </head>
 
-<body class="container">
-    <div>
-        <nav>
-            <img src="gold-star-shotting-gold-star-transparent-gold-bokeh-stars-free-free-png.webp" width="100px" class="Logo">
-            <ul>
-                <li><a href="#"><u>Home</u></a></li>
-                <li><a href="#"><u>Community</u></a></li>
-                <li><a href="#"><u>News</u></a></li>
-                <li><a href="#"><u>About</u></a></li>
-            </ul>
-        </nav>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="home page.html" class="logo">Magic U!</a>
+      <nav class="main-nav">
+        <a href="home page.html" class="active">Home</a>
+        <a href="news.html">News</a>
+        <a href="community.html">Community</a>
+        <a href="aboutus.html">About</a>
+      </nav>
     </div>
+  </header>
 <main class="main-content">
     <h1 class="Title">Magic U!</h1>
     <div class="tagline">
@@ -46,28 +45,33 @@ To all magical beginnings...
     </ul>
 </div>
 </main>
-</body>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Magic U! All rights reserved.</p>
+  </footer>
 
 
 
 
-<script>
-    var btn = document.querySelector("#btn");
-    var email = document.querySelector("#email");
+
+    <script>
+        var btn = document.querySelector("#btn");
+        var email = document.querySelector("#email");
 
 
-    function onClick(event) {
-        event.preventDefault();
-        var emailValue = email.value;
-        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        function onClick(event) {
+            event.preventDefault();
+            var emailValue = email.value;
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        if (emailValue === "" || !emailPattern.test(emailValue)) {
-            alert("That's not a valid email silly. Please type in a valid email!");
-        } else {
-            alert("Your email has been added to the recipient list! Stay tuned for magical updates ^_^");
-            email.value = ""; 
+            if (emailValue === "" || !emailPattern.test(emailValue)) {
+                alert("That's not a valid email silly. Please type in a valid email!");
+            } else {
+                alert("Your email has been added to the recipient list! Stay tuned for magical updates ^_^");
+                email.value = ""; 
+            }
         }
-    }
 
-    btn.addEventListener("click", onClick);
-</script>
+        btn.addEventListener("click", onClick);
+    </script>
+</body>
