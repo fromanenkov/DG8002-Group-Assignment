@@ -12,7 +12,7 @@
         <div>
             <a href="https://imgur.com/a/dIdM6A6"><img src="images/discord.png" alt="Discord" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/steam.png" alt="Steam" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/twitch.png" alt="Twitch" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/youtube.png" alt="Youtube" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/reddit.png" alt="Reddit" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/instagram.png" alt="Instagram" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/facebook.png" alt="Facebook" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/bluesky.png" alt="Bluesky" style="width:50px"></a> <a href="https://imgur.com/a/dIdM6A6"><img src="images/twitter.png" alt="Twitter" style="width:50px"></a> 
         </div>  
-    <h2>Fan Creations</h2>  <a href="https://imgur.com/a/dIdM6A6"> <button>SUBMIT YOUR ART</button> </a>
+    <h2>Fan Creations</h2>  <input type="button" value="SUBMIT YOUR ART" id="submission">
     <div class="container">
         <div>
             <a href="https://www.artstation.com/artwork/Ov0aay"><img src="images/witchhatatelier.webp" alt="Fanart1" style="height:300px"></a>   <a href="https://www.artstation.com/artwork/eaPge3"><img src="images/winx.jpg" alt="Fanart3" style="height:300px"></a> <a href="https://www.artstation.com/artwork/WKvOaN"><img src="images/ghibli.jpg" alt="Fanart7" style="height:300px"></a> <a href="https://www.artstation.com/artwork/3EOlXo"><img src="images/dina.jpg" alt="Fanart4" style="height:300px"></a>
@@ -25,17 +25,29 @@
             <tr>
                 <td>13th September 2026</td>
                 <td>Jackbox Community Night! Join us in the audience for jackbox games and get to know our game devs a bit more! Expect raunchy laughs ;)</td>
-                <td><a href="https://imgur.com/a/dIdM6A6"> <button>RSVP</button> </a></td>
+                <td><input type="button" value="RSVP" id="rsvp">
             </tr>
             <tr>
                 <td>30th October 2026</td>
                 <td>Halloween Horror Games! Join us for a series of different multiplayer horror games including but not limited to: REPO, Dead By Daylight, and many others!</td>
-                <td><a href="https://imgur.com/a/dIdM6A6"> <button>RSVP</button> </a></td>
+                <td><input type="button" value="RSVP" id="rsvp">
             </tr>
             <tr>
                 <td>21st December 2026</td>
                 <td>Holiday Fanart Contest! Create holiday-themed art with other community members and win special prizes!</td>
-                <td><a href="https://imgur.com/a/dIdM6A6"> <button>RSVP</button> </a></td>
+                <td><input type="button" value="RSVP" id="rsvp">
             </tr>
         </table>
 </body>
+<script>
+    var submission=document.querySelector("#submission");
+    function submitbutton(){
+        alert("Fanart submissions will be available soon! apologies >~<")
+    }
+    submission.addEventListener("click", submitbutton);
+    var rsvp=document.querySelector("#rsvp");
+    function submitbutton(){
+        alert("Thank you for RSVPing! Please check your email :)")
+    }
+    rsvp.addEventListener("click", submitbutton);
+</script>
