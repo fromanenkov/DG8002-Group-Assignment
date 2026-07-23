@@ -27,9 +27,6 @@ tabButtons.forEach(function (button) {
 });
 
 // Scroll reveal animation 
-// Every element with the "reveal" class starts hidden (see style.css).
-// This watches the page and adds "in-view" once a section scrolls into
-// sight, which triggers the fade + rise transition.
 const revealElements = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver(function (entries) {
