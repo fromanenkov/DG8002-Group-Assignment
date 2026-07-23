@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Updates - Magic U!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--NAVIGATION-->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">MAGIC U!</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="news.html" class="active">News</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!--PAGE TITLE / HERO -->
+    <section class="page-title reveal">
+      <span class="eyebrow">The Scroll of Record</span>
+      <h1>News &amp; Updates</h1>
+      <p class="subtitle">Everything happening across the Academy, straight from the archives.</p>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="dev-blog">Dev Blog</button>
+        <button class="tab-btn" data-filter="announcements">Announcements</button>
+        <button class="tab-btn" data-filter="events">Events</button>
+      </div>
+    </section>
+
+    <!--CONTENT RELEASE TIMELINE -->
+    <section class="section reveal">
+      <h2>Content Release Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-card">
+          <span class="timeline-dot"></span>
+          <h3>Beta Launch</h3>
+          <p>August 2026</p>
+        </div>
+        <div class="timeline-card">
+          <span class="timeline-dot"></span>
+          <h3>First Expansion</h3>
+          <p>November 2026</p>
+        </div>
+        <div class="timeline-card">
+          <span class="timeline-dot"></span>
+          <h3>Season Two</h3>
+          <p>Spring 2027</p>
+        </div>
+      </div>
+    </section>
+
+    <!--PATCH NOTES -->
+    <section class="section reveal">
+      <h2>Patch Notes</h2>
+      <div class="patch-notes">
+        <h3>Patch 1.2 &mdash; Spellcasting Rebalance</h3>
+        <p>Adjusted mana costs for tier-two spells and fixed a bug where familiars would
+          not respond to summon commands in the Astral Courtyard.</p>
+      </div>
+    </section>
+
+    <!--FEATURED ARTICLE -->
+    <section class="section reveal">
+      <h2>Featured Article</h2>
+      <article class="featured-article">
+        <div class="featured-image">Featured Image</div>
+        <div class="featured-text">
+          <span class="tag">Announcement &middot; July 22, 2026</span>
+          <h3>Enrollment Opens for the Fall Semester</h3>
+          <p>New students will be able to choose their starting faction and pick their first
+            three classes. Read on for everything you need to know before orientation day.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </article>
+    </section>
+
+    <!--ARTICLE GRID -->
+    <section class="section reveal">
+      <h2>Latest Articles</h2>
+      <div class="article-grid">
+
+        <div class="article-card" data-category="dev-blog">
+          <div class="thumbnail">Thumbnail</div>
+          <span class="tag">Dev Blog &middot; July 15, 2026</span>
+          <h4>Behind the Scenes: Building the Courtyard</h4>
+        </div>
+
+        <div class="article-card" data-category="announcements">
+          <div class="thumbnail">Thumbnail</div>
+          <span class="tag">Announcement &middot; July 10, 2026</span>
+          <h4>New Faction Reveal: The Ember Circle</h4>
+        </div>
+
+        <div class="article-card" data-category="events">
+          <div class="thumbnail">Thumbnail</div>
+          <span class="tag">Event &middot; July 5, 2026</span>
+          <h4>Community Duel Tournament This Weekend</h4>
+        </div>
+
+        <div class="article-card" data-category="dev-blog">
+          <div class="thumbnail">Thumbnail</div>
+          <span class="tag">Dev Blog &middot; June 28, 2026</span>
+          <h4>How We Designed the Spellcrafting System</h4>
+        </div>
+
+        <div class="article-card" data-category="announcements">
+          <div class="thumbnail">Thumbnail</div>
+          <span class="tag">Announcement &middot; June 20, 2026</span>
+          <h4>Server Maintenance Window Scheduled</h4>
+        </div>
+
+        <div class="article-card" data-category="events">
+          <div class="thumbnail">Thumbnail</div>
+          <span class="tag">Event &middot; June 12, 2026</span>
+          <h4>Founders' Feast: Sign Up Now</h4>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--FOOTER-->
+  <footer class="site-footer">
+    <p>&copy; 2026 Magic U! All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
