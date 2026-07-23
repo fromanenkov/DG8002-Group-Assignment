@@ -1,9 +1,9 @@
-// ===== Tab filtering =====
+// Tab filtering 
 // Grab all the tab buttons and all the article cards
 const tabButtons = document.querySelectorAll(".tab-btn");
 const articleCards = document.querySelectorAll(".article-card");
 
-// When a tab is clicked, show only the matching articles
+// shows only the matching articles
 tabButtons.forEach(function (button) {
   button.addEventListener("click", function () {
 
@@ -26,7 +26,7 @@ tabButtons.forEach(function (button) {
   });
 });
 
-// ===== Scroll reveal animation =====
+// Scroll reveal animation 
 // Every element with the "reveal" class starts hidden (see style.css).
 // This watches the page and adds "in-view" once a section scrolls into
 // sight, which triggers the fade + rise transition.
